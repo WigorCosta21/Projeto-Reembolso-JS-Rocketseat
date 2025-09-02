@@ -31,6 +31,4 @@ form.onsubmit = (event) => {
         amout: amount.value,
         created_at: new Date()
     }
-
-    console.log(newExpenses)
 }
