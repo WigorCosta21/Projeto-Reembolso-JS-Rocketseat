@@ -70,6 +70,8 @@ const expenseAdd = (newExpense) => {
         expenseItem.append(expenseIcon, expenseInfo, expenseAmount, removeIcon)
         expenseList.append(expenseItem)
 
+        formClear()
+
         updateTotals()
 
     }
@@ -124,3 +126,11 @@ expenseList.addEventListener("click", (event) => {
 
     updateTotals()
 })
+
+const formClear = () => {
+    expense.value = ""
+    category.value = ""
+    amount.value = ""
+
+    expense.focus()
+}
